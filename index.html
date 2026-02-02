@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张三然 | 品牌内容负责人 / 品牌内容 / 创意与 AI 应用探索</title>
+    <title>张三然 | 品牌内容 / 创意与 AI 应用探索</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -89,6 +89,25 @@
         .project-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* 优化项目图片展示样式 */
+        .project-img-container {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .project-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card:hover .project-img {
+            transform: scale(1.05);
         }
         
         /* Timeline animation */
@@ -243,7 +262,7 @@
             <a href="#contact" class="hover:text-accent transition-colors duration-300">联系方式</a>
         </div>
         <button id="mobile-menu-button" class="md:hidden text-2xl hover:text-accent transition-colors duration-300">
-            <<i class="fa fa-bars"></</i>
+            <i class="fa fa-bars"></i>
         </button>
     </nav>
     
@@ -252,7 +271,7 @@
         <div class="flex justify-between items-center mb-16">
             <span class="text-xl font-serif">张三然</span>
             <button id="close-menu-button" class="text-2xl hover:text-accent transition-colors duration-300">
-                <<i class="fa fa-times"></</i>
+                <i class="fa fa-times"></i>
             </button>
         </div>
         <div class="flex flex-col space-y-8">
@@ -269,8 +288,7 @@
             <!-- 优化名字字体大小和间距 -->
             <h1 class="text-5xl md:text-7xl font-serif mb-8 tracking-wider" data-aos="fade-up" data-aos-duration="1000">张三然</h1>
             
-            <!-- 副标题保持简洁 -->
-            <p class="text-xl md:text-2xl mb-6 font-light tracking-wide text-dark/80 leading-relaxed" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">品牌内容负责人</p>
+            <!-- 移除副标题「品牌内容负责人」 -->
             
             <!-- 恢复完整核心描述，优化行高和间距，不删词 -->
             <p class="text-base md:text-lg mb-12 font-light text-dark/70 leading-relaxed max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
@@ -437,11 +455,11 @@
             
             <!-- Project Grid - 并行排版，删除多余元素 -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Project 1 -->
+                <!-- Project 1 - 乐刻运动 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <div class="aspect-video overflow-hidden">
-                            <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/86c6d9a3339b41d2b7106c15b497237f~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202601201541222E173EA78F621A0ED207&rrcfp=f06b921b&x-expires=1771486903&x-signature=a%2B52DcvmEvzFj11EmJ%2BacqZw%2BVM%3D" alt="乐刻运动｜内容矩阵升级与增长模型搭建" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                        <div class="project-img-container">
+                            <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/21e11e8c6a674b5fbbb5dc774d67f776.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260202165358C7A60C05CB56286D30B9&rrcfp=8a172a1a&x-expires=1770627238&x-signature=BXh%2FYV7uGiOYMZi3Q46AFC5v9xQ%3D" alt="乐刻运动｜内容矩阵升级与增长模型搭建" class="project-img">
                         </div>
                         <div class="p-8">
                             <h4 class="text-xl font-serif mb-4">乐刻运动｜内容矩阵升级与增长模型搭建</h4>
@@ -456,11 +474,11 @@
                     </div>
                 </div>
                 
-                <!-- Project 2 -->
+                <!-- Project 2 - 锅圈食汇 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <div class="aspect-video overflow-hidden">
-                            <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/4076d5546def48408206a36dae46072c~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202601201541222E173EA78F621A0ED207&rrcfp=f06b921b&x-expires=1771486929&x-signature=KmSFhTTGVvpR8TbU%2BAcX8%2B%2BGYtA%3D" alt="锅圈食汇 × 唐宫夜宴｜品牌 IP 整合营销项目" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                        <div class="project-img-container">
+                            <img src="https://p26-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/9ebe457b18a145f49ff9e5cdc775e51d.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260202165358C7A60C05CB56286D30B9&rrcfp=8a172a1a&x-expires=1770627238&x-signature=BafWJgrz61A0Y3P8VSuveqcBpzo%3D" alt="锅圈食汇 × 唐宫夜宴｜品牌 IP 整合营销项目" class="project-img">
                         </div>
                         <div class="p-8">
                             <h4 class="text-xl font-serif mb-4">锅圈食汇 × 唐宫夜宴｜品牌 IP 整合营销项目</h4>
@@ -474,11 +492,11 @@
                     </div>
                 </div>
                 
-                <!-- Project 3 -->
+                <!-- Project 3 - 非遗项目 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <div class="aspect-video overflow-hidden">
-                            <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/7ad5fa27979a4c168160f3ae98e6ff9a~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202601201541222E173EA78F621A0ED207&rrcfp=f06b921b&x-expires=1771486926&x-signature=rhEejHK%2FzpFdzX9hyvdeSpqmeQg%3D" alt="非遗项目｜「十八般手艺」IP 从 0 到 1 打造" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                        <div class="project-img-container">
+                            <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/e76757c5a341448f82f5ee8f6bc07daa.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260202165358C7A60C05CB56286D30B9&rrcfp=8a172a1a&x-expires=1770627238&x-signature=g4ozpIZCrqr2GnDemxa%2FcBUCFMM%3D" alt="非遗项目｜「十八般手艺」IP 从 0 到 1 打造" class="project-img">
                         </div>
                         <div class="p-8">
                             <h4 class="text-xl font-serif mb-4">非遗项目｜「十八般手艺」IP 从 0 到 1 打造</h4>
@@ -492,11 +510,11 @@
                     </div>
                 </div>
                 
-                <!-- Project 4 -->
+                <!-- Project 4 - 快乐出发 -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                        <div class="aspect-video overflow-hidden">
-                            <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/08c8c2f0265c4bd995b52e64fd3d5bf6~tplv-a9rns2rl98-image.image?lk3s=8e244e95&rcl=202601201541222E173EA78F621A0ED207&rrcfp=f06b921b&x-expires=1771486928&x-signature=7xL%2Fx%2FdE73eiB2Z2UPzNjrJcTNE%3D" alt="乐刻运动｜「快乐出发」线下事件营销 × 线上传播" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                        <div class="project-img-container">
+                            <img src="https://p26-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/7d76928a17f44d5dbba8b012bef822d6.png~tplv-a9rns2rl98-24:720:720.png?lk3s=8e244e95&rcl=20260202165358C7A60C05CB56286D30B9&rrcfp=8a172a1a&x-expires=1770627238&x-signature=8XEaMtNURr1hh8qTSJpxukxIQFc%3D" alt="乐刻运动｜「快乐出发」线下事件营销 × 线上传播" class="project-img">
                         </div>
                         <div class="p-8">
                             <h4 class="text-xl font-serif mb-4">乐刻运动｜「快乐出发」线下事件营销 × 线上传播</h4>
@@ -514,7 +532,7 @@
             <!-- 保留查看个人作品按钮 -->
             <div class="mt-16 text-center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                 <a href="https://my.feishu.cn/wiki/B5LCwSPGHivlsykWTUccVCpRnVc?from=from_copylink" target="_blank" class="btn-outline px-8 py-4 border-2 border-accent text-accent hover:bg-accent hover:text-white rounded-btn transition-all duration-500 text-lg font-medium inline-block">
-                    <<i class="fa fa-file-text-o mr-2"></</i>点击查看个人作品
+                    <i class="fa fa-file-text-o mr-2"></i>点击查看个人作品
                 </a>
             </div>
         </div>
